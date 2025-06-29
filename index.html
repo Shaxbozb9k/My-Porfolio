@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaxbozbek - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Kirish</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <input
+              type="text"
+              id="username"
+              placeholder="Foydalanuvchi nomi"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input type="password" id="password" placeholder="Parol" required />
+          </div>
+          <div class="login-links">
+            <a href="#" class="forgot-link">Parolni tiklash</a>
+            <a href="#" class="register-link">Ro'yxatdan o'tish</a>
+          </div>
+          <button type="submit" class="btn-login">Kirish</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Shaxbozbek</h2>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Bosh sahifa</a></li>
+          <li><a href="#about" class="nav-link">Haqida</a></li>
+          <li><a href="#projects" class="nav-link">Loyihalar</a></li>
+          <li><a href="#skills" class="nav-link">Ko'nikmalar</a></li>
+          <li><a href="#contact" class="nav-link">Aloqa</a></li>
+          <li><button id="loginBtn" class="btn-login-nav">Kirish</button></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="animate-text">
+            Salom, men <span class="highlight">Shaxbozbek</span>
+          </h1>
+          <p class="animate-text-delay">
+            Full Stack Developer & UI/UX Designer
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-primary">Loyihalarimni ko'ring</button>
+            <button class="btn-secondary">Aloqa</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="floating-card">
+            <i class="fas fa-code"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Haqida</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Men tajribali Full Stack Developer bo'lib, zamonaviy web
+              texnologiyalari bilan ishlayman. Har bir loyihada foydalanuvchi
+              tajribasini yaxshilash va chiroyli interfeys yaratishga e'tibor
+              beraman.
+            </p>
+            <div class="stats">
+              <div class="stat-item">
+                <h3>50+</h3>
+                <p>Bajarilgan loyihalar</p>
+              </div>
+              <div class="stat-item">
+                <h3>3+</h3>
+                <p>Yillik tajriba</p>
+              </div>
+              <div class="stat-item">
+                <h3>100%</h3>
+                <p>Mijozlar mamnuniyati</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-container">
+              <div class="profile-3d">
+                <div class="profile-card">
+                  <div class="profile-avatar">
+                    <div class="avatar-circle">
+                      <div class="avatar-inner">
+                        <i class="fas fa-user"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-info">
+                    <h3>Shaxbozbek</h3>
+                    <p>Full Stack Developer</p>
+                  </div>
+                  <div class="floating-elements">
+                    <div class="element element-1">
+                      <i class="fab fa-react"></i>
+                    </div>
+                    <div class="element element-2">
+                      <i class="fab fa-js"></i>
+                    </div>
+                    <div class="element element-3">
+                      <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="element element-4">
+                      <i class="fab fa-html5"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section with Carousel -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Loyihalar</h2>
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-slide active">
+              <div class="project-card">
+                <div class="project-image">
+                  <div class="project-3d">
+                    <div class="project-scene">
+                      <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+                      <div class="project-elements">
+                        <div class="tech-element tech-1">
+                          <i class="fab fa-react"></i>
+                        </div>
+                        <div class="tech-element tech-2">
+                          <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="tech-element tech-3">
+                          <i class="fas fa-database"></i>
+                        </div>
+                      </div>
+                      <div class="project-glow"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <h3>E-commerce Platform</h3>
+                  <p>
+                    Zamonaviy online do'kon platformasi. React, Node.js va
+                    MongoDB bilan yaratilgan.
+                  </p>
+                  <div class="project-tech">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn-project">Ko'rish</a>
+                    <a href="#" class="btn-project">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-card">
+                <div class="project-image">
+                  <div class="project-3d">
+                    <div class="project-scene">
+                      <div class="project-icon">
+                        <i class="fas fa-tasks"></i>
+                      </div>
+                      <div class="project-elements">
+                        <div class="tech-element tech-1">
+                          <i class="fab fa-vuejs"></i>
+                        </div>
+                        <div class="tech-element tech-2">
+                          <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="tech-element tech-3">
+                          <i class="fab fa-css3-alt"></i>
+                        </div>
+                      </div>
+                      <div class="project-glow"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <h3>Task Manager</h3>
+                  <p>
+                    Vazifalarni boshqarish ilovasi. Vue.js va Firebase bilan
+                    yaratilgan.
+                  </p>
+                  <div class="project-tech">
+                    <span>Vue.js</span>
+                    <span>Firebase</span>
+                    <span>CSS3</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn-project">Ko'rish</a>
+                    <a href="#" class="btn-project">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-card">
+                <div class="project-image">
+                  <div class="project-3d">
+                    <div class="project-scene">
+                      <div class="project-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                      </div>
+                      <div class="project-elements">
+                        <div class="tech-element tech-1">
+                          <i class="fab fa-js"></i>
+                        </div>
+                        <div class="tech-element tech-2">
+                          <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="tech-element tech-3">
+                          <i class="fab fa-html5"></i>
+                        </div>
+                      </div>
+                      <div class="project-glow"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <h3>Weather App</h3>
+                  <p>
+                    Ob-havo ma'lumotlarini ko'rsatuvchi ilova. JavaScript va
+                    Weather API bilan yaratilgan.
+                  </p>
+                  <div class="project-tech">
+                    <span>JavaScript</span>
+                    <span>API</span>
+                    <span>HTML5</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" class="btn-project">Ko'rish</a>
+                    <a href="#" class="btn-project">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-btn next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Ko'nikmalar</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3>HTML5</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3>CSS3</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3>React</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <h3>Node.js</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>MongoDB</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Aloqa</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>shaxbozbek@example.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Telefon</h3>
+                <p>+998 90 123 45 67</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Manzil</h3>
+                <p>Toshkent, O'zbekiston</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form>
+              <div class="form-group">
+                <input type="email" placeholder="Email" required />
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Ismingiz" required />
+              </div>
+
+              <div class="form-group">
+                <textarea placeholder="Xabar" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Yuborish</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2024 Shaxbozbek. Barcha huquqlar himoyalangan.</p>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
